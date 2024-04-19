@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="script.js"></script>
+    <script src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
 </head>
 <body>
     <h1 style="text-align: center;">Bootstrap Photo Album</h1>
@@ -14,11 +15,11 @@
 
       <div class="row row-cols-3 gap-5">
         <div class="col">
-          <img src="spiderman.jpg" alt="Image 1" class="img-thumbnail" id="img_1">
+          <img src="spiderman.jpg" alt="Image 1" class="img-thumbnail" id="food_1">
           <button type="button" class="btn btn-primary" onclick="checkReddish()">Check Reddish</button>
         </div>
         <div class="col">
-          <img src="obito.jpg" alt="Image 2" class="img-thumbnail" id="img_2">
+          <img src="obito.jpg" alt="Image 2" class="img-thumbnail" id="food_2">
           <button type="button" class="btn btn-primary" onclick="makeReddish()">Make Reddish</button>
         </div>
         <div class="col">
@@ -40,6 +41,17 @@
           <button type="button" class="btn btn-primary" onclick="createAvatar()">Create Avatar</button>
           <canvas id="avatarCanvas" width="100" height="100"></canvas>
         </div>        
+      </div>
+      <div class="row row-cols-3 gap-2">
+        <div class="col">
+          <img src="env.jpg" alt="Image 4" class="img-thumbnail" id="grayscale">
+          <button type="button" class="btn btn-primary" onclick="grayscale()">Grayscale</button>
+        </div>
+        <div class="col">
+          <img src="10.jpg" alt="Image 4" class="img-thumbnail" id="qr">
+          <div id="canvas5" class="canvas"></div>
+          <button type="button" class="btn btn-primary" onclick="generateQR('img5.jpeg', 'canvas5')">Generate QR</button>
+        </div>      
       </div>
     </div>
       
