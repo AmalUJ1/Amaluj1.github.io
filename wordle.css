@@ -3,7 +3,7 @@
 body {
     font-family: 'Albert Sans', sans-serif;
     text-align: center;
-    background-color: #080808; /* Set body background color to black */
+    background-color: #081550fb; /* Set body background color to black */
     color: white; /* Set text color to white */
     
 }
@@ -97,6 +97,13 @@ hr {
     align-items: center;
 }
 
+#howToPlayBtn{
+    background-color: rgb(255, 136, 0);
+    border-radius: 2vw;
+    color: white;
+    width: 5vw;
+    height: 5vh;
+}
 
 /* Add styles for the modal */
 .modal {
